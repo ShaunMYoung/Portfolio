@@ -1,0 +1,253 @@
+* {
+    font-family: Arial;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+body {
+    background: rgba(255, 255, 255, 0.575);
+    margin: 0 auto;
+}
+
+.flex-nav ul{
+    background: rgb(56, 123, 126);
+    padding: 30px;
+    display: flex;
+    margin: 0 auto;
+    border-bottom: 3px solid rgb(79, 88, 114);
+    list-style-type: none;
+    font-size: 18pt;
+    color: white;
+}
+
+.flex-nav .homeicon {
+    font-size: 18pt;
+    padding-left: 20%;
+    flex: 4;
+}
+
+#home:hover {
+    opacity: 0.7
+}
+
+.flex-nav .navbar {
+    flex: 1;
+    text-align: center;
+}
+
+.flex-nav .navbar:hover {
+    text-decoration: underline;
+}
+
+#navmedia1 {
+    flex:.3;
+    padding-left: 5%;
+}
+#media1{
+    cursor: pointer;
+}
+#media1:hover {
+    opacity: 0.7;
+}
+
+#navmedia2 {
+    flex:.3;
+}
+#media2{
+    cursor: pointer;
+}
+#media2:hover {
+    opacity: 0.7;
+}
+
+#navmedia3 {
+    flex:.3;
+    padding-right: 15%;
+}
+#media3 {
+    cursor: pointer;
+}
+#media3:hover {
+    opacity: 0.7;
+}
+
+.flex-footer ul{
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    background: rgb(202, 202, 202);
+    padding: 30px;
+    display: flex;
+    margin: 0 auto;
+    list-style-type: none;
+    font-size: 10pt;
+    color: rgb(56, 123, 126);
+}
+
+.flex-footer .name {
+    flex: .7;
+    display: inline;
+    padding-left: 20%;
+}
+
+@media (max-width: 1280px){
+    .name {
+        padding-left: 0% !important;
+        margin: 0 !important;
+    }
+
+    .navmedia {
+        display: none;
+    }
+
+    .flex-nav .navbar {
+        flex: 2;
+    }
+    .homeicon {
+        padding-left: 5% !important;
+    }
+}
+@media (max-width: 1280px){
+    .flex-footer ul{
+        font-size: 20pt !important;
+        text-align: center;
+    }
+}
+#name:hover {
+    text-decoration: underline;
+}
+.flex-footer .footer1 {
+    flex: 1;
+    margin: 25px;
+    text-decoration: none;
+}
+.flex-footer .footer1:hover {
+    text-decoration: underline;
+}
+
+.flex-footer .footer2 {
+    flex: 1;
+    margin: 25px;
+    text-decoration: none;
+}
+.flex-footer .footer2:hover {
+    text-decoration: underline;
+}
+
+.flex-footer .footer3 {
+    flex: 1;
+    margin: 25px;
+    text-decoration: none;
+}
+.flex-footer .footer3:hover {
+    text-decoration: underline;
+}
+
+#email {
+    position: fixed;
+    left: -100000px;
+    top: -100000px
+}
+
+.abouttextarea {
+
+    margin: 0 auto;
+    width: 60%;
+}
+
+.aboutimg {
+    float:right;
+    height: 100%;
+    margin: 6%;
+}
+
+.aboutme {
+    height: 50vh;
+    position: absolute;
+    margin-top: 8%;
+    font-size: 20pt;
+}
+
+.aboutme2 {
+    height: 75vh;
+    position: absolute;
+    font-size: 18pt;
+    margin-top: 13%;
+    width: 25%;
+    color: rgb(92, 92, 92);
+    word-wrap: break-word;
+}
+
+
+@media (max-width: 1280px) {
+        .abouttextarea {
+            height: 125vh;
+            width: 100%;
+            height: 1000px;
+        }
+        .aboutimg {
+            position: relative;
+            float: none;
+            margin: 0 auto;
+            height: 40vw;
+            display: flex;
+            justify-content: center;
+        }
+        .aboutme {
+            position: absolute;
+            margin-top: 43%;
+            width: 100% ;
+            text-align: center;
+            font-size: 45pt;
+        }
+        .aboutme2 {
+            position: absolute;
+            width: 100%;
+            margin-top: 60%;
+            float: none;
+            font-size:28pt;
+            text-align: center;
+        }
+    }
+.portfolio {
+    width: 60vw;
+    min-height: 145vh;
+    margin: 0 auto;
+    overflow: visible;
+}
+.app {
+    margin: 3px;
+    margin-top: 30px;
+    list-style-type: none;
+    color: black;
+    border: 4px solid rgb(202, 202, 202);
+    box-shadow: 3px 3px 3px rgb(56, 123, 126);;
+    width: 30%;
+    border-radius: 10px;
+    float: left;
+}
+
+.appimg {
+    width: 18vw;
+    height: 9vw;
+}
+
+.apptitle {
+    color: black;
+}
+
+.description {
+    color: black;
+}
+
+@media (max-width: 1280px) {
+    .portfolio {
+        width: 96vw;
+        padding-left: 4vw;
+    }
+    .appimg{
+        width: 28.8vw;
+        height: 15vw
+    }
+}

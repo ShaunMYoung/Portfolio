@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="57x57" href="./favi/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favi/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favi/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favi/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favi/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favi/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favi/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favi/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favi/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favi/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favi/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favi/favicon-16x16.png">
+    <link rel="manifest" href="./favi/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favi/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel= "stylesheet" type="text/css" href="main.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Shaun Young | Front End Developer</title>
+</head>
+<body>
+    <nav class="flex-nav">
+        <ul  class="nav">
+            <li class="homeicon"><a href="index.html"><i class="fas fa-home" id="home"></a></i></li>
+            <li class="navbar"><a href="portfolio.html">Portfolio</a></li>
+            <li class="navbar"><a href="https://docs.google.com/document/d/1AKip4YxbfOHMjTVL64MK4xQRptUZ26FYRdDKqJ7BK8o/edit?usp=sharing" target="_blank">Resume</a></li>
+            <input type="text" value="smyoung@ufl.edu" id="email">
+            <li class="navmedia" id="navmedia1"><i class="fas fa-envelope" onclick="copyemail()" id="media1"></i></li>
+            <li class="navmedia" id="navmedia2"><a href="https://github.com/ShaunMYoung" target="_blank"><i class="fab fa-github-square" id="media2"></i></a></li>
+            <li class="navmedia" id="navmedia3"><a href="https://www.linkedin.com/in/shaunmyoung/" target="_blank"><i class="fab fa-linkedin" id="media3"></i></a></li>
+        </ul>
+    </nav>
+        <div class="abouttextarea">
+            <span><strong class="aboutme">About me</strong></span>
+            <span class="aboutme2">I'm a student at the University of Florida, studying Information Systems and Operations Management. <br><br>
+                    I enjoy developing simple, user-friendly apps. In my spare time I like to research tech trends and coding tutorials.
+            </span>
+
+            <img class="aboutimg" src="profile1.jpg">
+        </div>
+    <footer class="flex-footer">
+        <ul class="nav">
+             <li class="name"><a  id="name" href="index.html"><strong>2019 Shaun Young</strong></a></li>
+             <li><a href="portfolio.html" class="footer2">Portfolio</a></li>
+             <li><a href="https://docs.google.com/document/d/1AKip4YxbfOHMjTVL64MK4xQRptUZ26FYRdDKqJ7BK8o/edit?usp=sharing" target="_blank" class="footer3">Resume</a></li>
+        </ul>
+    </footer>
+<script>type="text/javascript"
+function copyemail() { 
+    var copyText = document.getElementById('email');
+    copyText.select()
+    document.execCommand("copy")
+    alert("Copied email to clipboard");
+}
+</script>
+
+</body>
+</html>

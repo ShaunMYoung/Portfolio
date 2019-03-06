@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="57x57" href="./favi/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favi/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favi/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favi/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favi/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favi/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favi/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favi/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favi/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favi/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favi/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favi/favicon-16x16.png">
+    <link rel="manifest" href="./favi/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favi/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel= "stylesheet" type="text/css" href="main.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Development Portfolio | Shaun Young</title>
+</head>
+<body>
+    <nav class="flex-nav">
+        <ul  class="nav">
+            <li class="homeicon"><a href="index.html"><i class="fas fa-home" id="home"></a></i></li>
+            <li class="navbar"><a href="portfolio.html">Portfolio</a></li>
+            <li class="navbar"><a href="https://docs.google.com/document/d/1AKip4YxbfOHMjTVL64MK4xQRptUZ26FYRdDKqJ7BK8o/edit?usp=sharing" target="_blank">Resume</a></li>
+            <input type="text" value="smyoung@ufl.edu" id="email">
+            <li id="navmedia1" class="navmedia"><i class="fas fa-envelope" onclick="copyemail()" id="media1"></i></li>
+            <li id="navmedia2" class="navmedia"><a href="https://github.com/ShaunMYoung" target="_blank"><i class="fab fa-github-square" id="media2"></i></a></li>
+            <li id="navmedia3" class="navmedia"><a href="https://www.linkedin.com/in/shaunmyoung/" target="_blank"><i class="fab fa-linkedin" id="media3"></i></a></li>
+        </ul>
+    </nav>
+    <ul class="portfolio">
+        <li class="app">
+            <a href="https://quotat.io" target="_blank">
+                <img class="appimg" src="quotatio.png">
+                <h4 class="apptitle"> Quotatio</h4>
+                <p class="description">JavaScript</p>
+            </a>
+        </li>
+        <li class="app">
+            <a href="https://codesandbox.io/s/n0l17xwjnl" target="_blank">
+                <img class="appimg" src="tdl.PNG">
+                <h4 class="apptitle">To-Do-List</h4>
+                <p class="description">React</p>
+            </a>
+        </li>
+        <li class="app">
+            <a href="https://shaunmyoung.github.io/Tic-Tac-Toe/index.html" target="_blank">
+                <img class="appimg" src="tictactoe.png">
+                <h4 class="apptitle"> Tic-Tac-Toe</h4>
+                <p class="description">JavaScript</p>
+            </a>
+        </li>
+        <li class="app">
+             <a href="https://shaunmyoung.github.io/RockPaperScissors/" target="_blank">
+                 <img class="appimg" src="rps.PNG">
+                 <h4 class="apptitle"> Rock, Paper, Scissors</h4>
+                <p class="description">JavaScript</p>
+            </a>
+        </li>
+        <li class="app">
+            <a href="https://shaunmyoung.github.io/Doodle/" target="_blank">
+                <img class="appimg" src="doodle.png">
+                <h4 class="apptitle"> Doodle</h4>
+                <p class="description">JavaScript</p>
+            </a>
+         </li>
+        <li class="app">
+            <a href="https://shaunmyoung.github.io/Google-Homepage/Google.html" target="_blank">
+                 <img class="appimg" src="google.PNG">
+                 <h4 class="apptitle"> Google</h4>
+                 <p class="description">HTML/CSS</p>
+            </a>
+        </li>
+    </ul>
+    <div class="space">.</div>
+    <footer class="flex-footer">
+            <ul class="nav">
+                 <li class="name"><a  id="name" href="index.html"><strong>2019 Shaun Young</strong></a></li>
+                 <li><a href="portfolio.html" class="footer2">Portfolio</a></li>
+                 <li><a href="https://docs.google.com/document/d/1AKip4YxbfOHMjTVL64MK4xQRptUZ26FYRdDKqJ7BK8o/edit?usp=sharing" target="_blank"class="footer3">Resume</a></li>
+            </ul>
+    </footer>
+<script>type="text/javascript"
+function copyemail() { 
+    var copyText = document.getElementById('email');
+    copyText.select()
+    document.execCommand("copy")
+    alert("Copied email to clipboard");
+}
+</script>
+
+</body>
+</html>

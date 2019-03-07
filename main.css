@@ -157,7 +157,7 @@ body {
 }
 
 .aboutimg {
-    padding-top: 12px;
+    padding-top: 5%;
     float:right;
     height: 100%;
 }
@@ -183,8 +183,10 @@ body {
         .abouttextarea {
             width: 100%;
             height: 1000px;
+            margin-bottom: 10% !important;
         }
         .aboutimg {
+            padding-top: 12px;
             position: relative;
             float: none;
             margin: 0 auto;

@@ -37,7 +37,11 @@ body {
     text-align: center;
 }
 
-.flex-nav .navbar:hover {
+#portlink:hover {
+    text-decoration: underline;
+}
+
+#reslink:hover {
     text-decoration: underline;
 }
 
